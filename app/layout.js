@@ -38,6 +38,11 @@ export default function RootLayout({ children }) {
               Contact
             </Link>
           </li>
+          <li>
+            <Link href="/posts" class="hover:border-b border-red-600 pb-1">
+              Posts
+            </Link>
+          </li>
         </ul>
         <div className="p-4 bg-gray-200">{children}</div>
       </body>

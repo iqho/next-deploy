@@ -3,5 +3,7 @@
   "/about/page": "app/about/page.js",
   "/contact/page": "app/contact/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/posts/[id]/page": "app/posts/[id]/page.js",
+  "/posts/page": "app/posts/page.js"
 }
