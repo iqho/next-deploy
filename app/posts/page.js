@@ -3,7 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default async function Posts() {
-  const res = await fetch("http://110.76.128.74:8005/api/v1/admin/store/products");
+  const res = await fetch("http://110.76.128.74:8005/api/v1/admin/pos-service/products", {
+    cache: 'no-store'
+  });
 
   if (!res.ok) {
     throw new Error("Failed to fetch products");
@@ -13,7 +15,7 @@ export default async function Posts() {
 
   return (
     <div>
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      <main className="flex flex-col">
         <h1>Posts</h1>
         <ul>
           {data.data?.map((product) => (
