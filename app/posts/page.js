@@ -3,9 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default async function Posts() {
-  const res = await fetch("http://110.76.128.74:8005/api/v1/admin/pos-service/products", {
-    cache: 'no-store'
-  });
+  const res = await fetch("http://110.76.128.74:8005/api/v1/admin/pos-service/products");
 
   if (!res.ok) {
     throw new Error("Failed to fetch products");

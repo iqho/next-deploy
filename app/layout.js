@@ -2,6 +2,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Link from "next/link";
 
+export const revalidate = 10;
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
