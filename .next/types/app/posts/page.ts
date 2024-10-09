@@ -1,4 +1,4 @@
-// File: /opt/lampp/htdocs/iqbal/react/next-deploy/app/posts/page.js
+// File: J:\laragon\www\react\next\next-deploy\app\posts\page.js
 import * as entry from '../../../../app/posts/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
